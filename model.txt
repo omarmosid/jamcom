@@ -1,0 +1,28 @@
+comment
+ - id - ID
+ - userId - ID
+ - content - STRING
+ - upvotes - INT
+ - downvotes - INT
+ - replies - ARRAY[COMMENT]
+ - isEdited - BOOLEAN
+ - isApproved - BOOLEAN
+
+CREATE comment,
+DELETE comment,
+EDIT comment content,
+
+VIEW list of comments
+SORT list of comments by Most Recent, Most Popular (Most Upvotes)
+
+user
+ - id - STRING
+ - username - STRING
+ - displayName - STRING
+ - avatar - IMAGE
+ - role - STRING
+ - isTrustedUser - BOOLEAN
+
+CREATE user,
+DELETE user,
+UPDATE user
